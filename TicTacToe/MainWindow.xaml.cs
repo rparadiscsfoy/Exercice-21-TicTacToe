@@ -107,7 +107,7 @@ namespace Exercice21
         currentPlayer = TicTacToe.StartNewGame(SIZE, out grid);
         UpdateView();
       }
-      else if (TicTacToe.IsDrawGame(grid))
+      else if (TicTacToe.IsGameADraw (grid))
       {
         MessageBox.Show($"Partie nulle.", "Oh. Dommage.", MessageBoxButton.OK, MessageBoxImage.Information);
         currentPlayer = TicTacToe.StartNewGame(SIZE, out grid);
