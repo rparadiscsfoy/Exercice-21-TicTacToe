@@ -92,12 +92,12 @@ namespace Exercice21
 
             for (int x = 0; x < xSize; x++)
                 for (int y = 0; y < ySize; y++)
-                    images[x, y].Source = GetImage(grid[x, y]);
+                    images[x, y].Source = GetImage(grid[y, x]);
         }
 
         private void OnCellClick(int x, int y)
         {
-            currentPlayer = TicTacToe.PutMarkAt(x, y, grid, currentPlayer);
+            currentPlayer = TicTacToe.PutMarkAt(y, x, grid, currentPlayer);
             UpdateView();
 
             var winner = TicTacToe.FindWinner(grid);

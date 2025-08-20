@@ -35,7 +35,7 @@ public class TestsTicTacToe
       };
 
         char nextPlayer = TicTacToe.PutMarkAt(1, 0, grid, CURRENT_PLAYER);
-        Assert.Equal(CURRENT_PLAYER, grid[0, 1]);
+        Assert.Equal(CURRENT_PLAYER, grid[1, 0]);
         Assert.Equal(O, nextPlayer);
 
     }
@@ -49,7 +49,7 @@ public class TestsTicTacToe
       };
 
         char nextPlayer = TicTacToe.PutMarkAt(1, 0, grid, CURRENT_PLAYER);
-        Assert.Equal(CURRENT_PLAYER, grid[0, 1]);
+        Assert.Equal(CURRENT_PLAYER, grid[1, 0]);
         Assert.Equal(X, nextPlayer);
     }
 
